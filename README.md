@@ -14,8 +14,8 @@ curl -s ipinfo.io/city >>/etc/xray/city
     curl -s ipinfo.io/org | cut -d " " -f 2-10 >>/etc/xray/isp
     wget -O /etc/haproxy/haproxy.cfg "https://raw.githubusercontent.com/Ian147/MrKidz/main/kucik/haproxy.cfg" >/dev/null 2>&1
     wget -O /etc/nginx/conf.d/xray.conf "https://raw.githubusercontent.com/Ian147/MrKidz/main/kucik/xray.conf" >/dev/null 2>&1
-    sed -i "s/xxx/sub domain kamu/g" /etc/haproxy/haproxy.cfg
-    sed -i "s/xxx/sub domain kamu/g" /etc/nginx/conf.d/xray.conf
+    sed -i "s/xxx/nusa.ianclay.top/g" /etc/haproxy/haproxy.cfg
+    sed -i "s/xxx/nusa.ianclay.top/g" /etc/nginx/conf.d/xray.conf
     curl https://raw.githubusercontent.com/Ian147/MrKidz/main/kucik/nginx.conf > /etc/nginx/nginx.conf
     
 cat /etc/xray/xray.crt /etc/xray/xray.key | tee /etc/haproxy/hap.pem
