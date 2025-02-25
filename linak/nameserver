@@ -4,7 +4,7 @@ ns_domain_cloudflare() {
 	DOMAIN="ianclay.top"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}."top.ianclay.top"
+	SUB_DOMAIN=${SUB}."ianclay.top"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
 	CF_ID=irwan.irri@gmail.com
         CF_KEY=88af6132833b09c30996a6f5635bb57ccbf62
